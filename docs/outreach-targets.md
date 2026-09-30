@@ -1,14 +1,21 @@
 # Outreach tracker
 
-Wave one. Nothing here has been sent. Personal inboxes are listed only when the company published them. No bought lists.
+Wave one. Nothing here has been sent. You send these from koval.matej88@seznam.cz or LinkedIn. Personal inboxes are listed only when the company published them. No bought lists.
 
-The sample link does not resolve yet. Creating the public GitHub repo returned 403 (the token cannot create repositories). After `gh auth login` and a public push of this repo, open the link once before sending any note.
+Sample (opens): https://cdn.jsdelivr.net/gh/kovy88/data-stack-bill-cut@main/docs/sample-report.html
 
-Sample: https://cdn.jsdelivr.net/gh/kovy88/data-stack-bill-cut@main/docs/sample-report.html
+Open that URL once in a browser before the first send.
 
-Agreement to attach or link: https://cdn.jsdelivr.net/gh/kovy88/data-stack-bill-cut@main/docs/nda.md
+Agreement: https://cdn.jsdelivr.net/gh/kovy88/data-stack-bill-cut@main/docs/nda.md
 
 From: Matěj Koval, koval.matej88@seznam.cz
+
+Send order:
+
+1. Wargaming, via the Greenhouse posting.
+2. ShipMonk, to recruitment@shipmonk.com. This is the only published inbox.
+3. Productboard, Rohlik, Heureka, Apify, Slevomat, Seznam on LinkedIn. Czech except Productboard and Apify. Skip a name that failed the check on that note.
+4. Allegro, then DHL last. DHL goes to the recruiter on the Jobs.cz posting, not to an engineer.
 
 Follow up once, five business days later, only if there is no reply. Then stop. A "no" is recorded in Reply and that company is not contacted again.
 
@@ -34,7 +41,8 @@ Subject: Snowflake cost control in the Prague analytics role
 
 - Why: public case study of a central Snowflake platform across countries, with nightly transforms.
 - Source: https://www.keboola.com/blog/heureka-building-a-universal-data-platform-across-9-countries-with-keboola-and-snowflake
-- Channel: LinkedIn to the current Head of BI. The case study names Michal in that role at the time of writing. Confirm he still works there before sending. No published email.
+- Channel: LinkedIn to the current Head of BI. No published email.
+- Checked 30 Sep 2026: Michal Buzek left Heureka in August 2025 and is now at Seznam. Do not message him. Group BI Director since August 2025 is Andy Werner (https://www.linkedin.com/in/wernerandy). His January 2026 post names BigQuery, Keboola, Dataform, and GCP, not Snowflake. Send the Czech note to Andy only if a current page still says Heureka runs Snowflake. Otherwise skip Heureka.
 - Sent: 
 - Reply: 
 
@@ -66,7 +74,8 @@ Subject: Nečinné kredity na Snowflake
 
 - Why: a public hiring post lists Snowflake, dbt, Keboola, and Looker as the data stack.
 - Source: https://www.linkedin.com/posts/petrforman_product-management-software-productboard-activity-7320781207854616578-somO
-- Channel: LinkedIn to the person who posted that role, after checking they still work at Productboard. No published email.
+- Channel: LinkedIn to the current data lead. No published email.
+- Checked 30 Sep 2026: Petr Forman, who posted the data-engineer role, left Productboard in October 2025 for Czechoslovak Group. Do not send him this note. Skip Productboard until the current data lead is confirmed on LinkedIn.
 - Sent: 
 - Reply: 
 
@@ -114,7 +123,8 @@ Subject: Snowflake compute cost in the data platform role
 
 - Why: a public case study says they chose Snowflake as the analytical database and run transforms through Keboola. A later data-engineer posting still lists Snowflake, dbt, and Keboola.
 - Source: https://www.keboola.com/blog/how-apify-saved-3-engineering-days-per-month-while-doubling-upsells and https://hiretik.com/jobs/d2df60d4-ee46-4787-92c1-31d9784ccce4
-- Channel: LinkedIn to the data lead. The case study names Matej Šesták. Confirm he still leads that team before sending. No published email.
+- Channel: LinkedIn to the current data lead. No published email.
+- Checked 30 Sep 2026: Matej Šesták was Data Team Lead until February 2024. Do not message him. A data-engineer posting that still listed Snowflake was removed on 27 Jul 2026, so the company still had Snowflake then. No current lead's name was confirmed. Send to that lead once you find them. Do not guess an inbox.
 - Sent: 
 - Reply: 
 

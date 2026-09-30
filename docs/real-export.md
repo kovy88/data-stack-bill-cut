@@ -1,6 +1,8 @@
 # First real export
 
-No Snowflake login is configured on this machine (`SNOWFLAKE_*` is unset, and there is no `~/.snowflake` config visible to the workspace). The loader was not changed, because there is no real export to break it.
+Checked 30 Sep 2026: `data/private/` does not exist, so no client export has arrived. The loader was not changed.
+
+No Snowflake login is configured on this machine. The call steps are in `docs/first-call.md`.
 
 When an account is available:
 
