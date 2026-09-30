@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snowflake saving verification: Demo Co (synthetic)</title>
+<style>
+:root {
+  --paper: #e7eee9;
+  --sheet: #f7faf8;
+  --ink: #17211c;
+  --muted: #4e5e56;
+  --rule: #c9d5ce;
+  --apply: #0f5c40;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); color: var(--ink); }
+body {
+  margin: 0 auto;
+  max-width: 52rem;
+  padding: 2.5rem 1.25rem 4rem;
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+h1 { font-size: 1.8rem; font-weight: 600; letter-spacing: -0.02em; margin: 0.2rem 0 0.4rem; }
+h2 { font-size: 1.25rem; margin: 2.2rem 0 0.6rem; }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 0.3rem; }
+p { margin: 0.4rem 0 0.7rem; max-width: 68ch; }
+.kicker { color: var(--muted); margin: 0; }
+.banner { border-left: 3px solid var(--apply); padding-left: 0.8rem; color: var(--muted); }
+.statement { margin: 1.6rem 0 1rem; }
+.statement .amount {
+  font-size: 3.4rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  color: var(--apply);
+  margin: 0.15rem 0;
+}
+.meta { color: var(--muted); }
+.sheet { overflow-x: auto; margin: 0.8rem 0 1rem; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td {
+  text-align: left;
+  padding: 0.45rem 0 0.45rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+}
+th + th, td + td { padding-left: 1.25rem; }
+th { font-weight: 600; }
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  width: 1%;
+}
+pre {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  background: var(--sheet);
+  border-left: 3px solid var(--apply);
+  padding: 0.7rem 0.9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+ul { margin: 0.2rem 0 0.8rem; padding-left: 1.1rem; }
+li { margin: 0.2rem 0; }
+@media print {
+  html { background: white; }
+  body { padding: 0; max-width: none; }
+  pre, .statement .amount { color: black; }
+}
+</style>
+</head>
+<body>
+<p class="kicker">Snowflake saving verification</p>
+<h1>Demo Co (synthetic)</h1>
+<p class="meta">Before: 2026-08-29 to 2026-09-28 (30 days). After: 2026-11-27 to 2026-12-27 (30 days). Generated 2026-09-30. Price: 3.00 USD per credit.</p>
+<section class="statement">
+<p>Workload-adjusted annual saving</p>
+<p class="amount">$85,231</p>
+<p>Fee at 25%: $21,308, invoiced once. Raw credits-per-day saving is $76,503 (fee $19,126). The contract states which measure is invoiced.</p>
+</section>
+<p>Workload-adjusted compares credits per 1,000 queries and prices the difference at the later query volume, so growth in usage does not hide the saving and a drop in usage does not inflate it.</p>
+<div class="sheet"><table><thead><tr><th>Measure</th><th class="num">Annual saving</th><th class="num">Fee (25%)</th></tr></thead><tbody><tr><td>Raw (credits per day)</td><td class="num">$76,503</td><td class="num">$19,126</td></tr><tr><td>Workload-adjusted (credits per 1,000 queries)</td><td class="num">$85,231</td><td class="num">$21,308</td></tr></tbody></table></div>
+<h2>Per warehouse</h2>
+<div class="sheet"><table><thead><tr><th>Warehouse</th><th class="num">Credits/day before</th><th class="num">after</th><th class="num">Queries/day before</th><th class="num">after</th></tr></thead><tbody><tr><td>LEGACY_REPORTING_WH</td><td class="num">24.0</td><td class="num">0.0</td><td class="num">0</td><td class="num">0</td></tr><tr><td>TRANSFORM_WH</td><td class="num">75.9</td><td class="num">62.6</td><td class="num">1,680</td><td class="num">1,680</td></tr><tr><td>LOADING_WH</td><td class="num">19.3</td><td class="num">6.1</td><td class="num">576</td><td class="num">576</td></tr><tr><td>DS_WH</td><td class="num">16.4</td><td class="num">4.0</td><td class="num">14</td><td class="num">15</td></tr><tr><td>BI_WH</td><td class="num">44.9</td><td class="num">37.9</td><td class="num">1,152</td><td class="num">1,332</td></tr></tbody></table></div>
+<div class="sheet"><table><thead><tr><th>Warehouse</th><th class="num">Credits/1k queries before</th><th class="num">after</th><th class="num">Raw annual</th><th class="num">Adjusted</th></tr></thead><tbody><tr><td>LEGACY_REPORTING_WH</td><td class="num">–</td><td class="num">–</td><td class="num">$26,280</td><td class="num">$26,280</td></tr><tr><td>TRANSFORM_WH</td><td class="num">45.16</td><td class="num">37.25</td><td class="num">$14,554</td><td class="num">$14,554</td></tr><tr><td>LOADING_WH</td><td class="num">33.44</td><td class="num">10.55</td><td class="num">$14,443</td><td class="num">$14,443</td></tr><tr><td>DS_WH</td><td class="num">1,183.94</td><td class="num">271.47</td><td class="num">$13,584</td><td class="num">$14,621</td></tr><tr><td>BI_WH</td><td class="num">38.98</td><td class="num">28.47</td><td class="num">$7,642</td><td class="num">$15,332</td></tr></tbody></table></div>
+</body>
+</html>

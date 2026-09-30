@@ -1,0 +1,35 @@
+[project]
+name = "data-stack-bill-cut"
+version = "0.1.0"
+description = "Read-only cost scans for data/ML cloud spend (Snowflake first) with a written USD saving number"
+readme = "README.md"
+authors = [
+    { name = "Koval Matěj", email = "koval.matej88@seznam.cz" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+data-stack-bill-cut = "data_stack_bill_cut:main"
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
